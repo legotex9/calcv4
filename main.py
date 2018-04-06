@@ -1,5 +1,8 @@
+import repl # learn more: https://python.org/pypi/repl
 from termcolor import colored
 import time
+import math
+
 q = 0
 x = float(.25/2)
 def mainMenuNorm():
@@ -126,12 +129,21 @@ def mainMenuNoSleep():
 	print (colored('|     SETTINGS    | 0.05 |||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|','cyan'))
 	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||','cyan'))
 mainMenuNorm()
+def note():
+	print(colored('NOTE:','red'))
+	print(colored('	if you input any character that is not a number, the program will break.','red'))
+	print(colored('	i am currently trying to fix it, but it is taking a while.','red'))
+	print(colored('	thank you for understanding','red'))
+	print(colored(' 		-Kire Brownback','red'))
+note()
 while q<1:
-	pi = float(3.14159)
+	pi = math.pi
 	x = float(x/2)
 	a = float(input())
-	x1 = float(1)
-	
+	x1 = int(1)
+
+# --------------------------------------------
+#area:
 	#area of square
 	if a == 1.01:
 		print(colored('a = l * w', 'yellow'))
@@ -155,13 +167,14 @@ while q<1:
 	#area of circle
 	elif a == 1.03:
 		print(colored('a = pi * r ^ 2','yellow'))
-		r = float(input('h = '))
+		r = float(input('r = '))
 		a = pi * r **2
 		a = str(a)
 		print (colored('a = ' + a,'green'))
 	
- #	------------------------------------------------
+#	------------------------------------------------
 	
+#perimiter:
 	#perimiter of squrae
 	elif a == 2.01:
 		print(colored('p = (2 * l) + (2 * w)', 'yellow'))
@@ -187,16 +200,17 @@ while q<1:
 		r = float(input('r = '))
 		p = 2 * pi * r
 		p = str(p)
-		print('p = ' + p,'green')
+		print(colored('p = ' + p,'green'))
 		time.sleep(x1)
 	
- #	------------------------------------------------
+#	------------------------------------------------
 	
+#surface area:
 	#surface area of cube
 	elif a == 3.01:
-		print(colored('sa = 6 * s ^ 2','yellow'))
-		s = float(input('s = '))
-		sa = float(6*s**2)
+		print(colored('sa = 6 * b ^ 2','yellow'))
+		b = float(input('b = '))
+		sa = float(6*b**2)
 		sa = str(sa)
 		print(colored('sa = ' + sa, 'green'))
 		time.sleep(x1)
@@ -214,9 +228,45 @@ while q<1:
 		
 	#surface area of triangular prisim
 	elif a == 3.03:
-		print('wip')
+		print(colored('sa = ((b * h1)/2) * h2','yellow'))
+		b = float(input('b = '))
+		h1 = float(input('h1 = '))
+		h2 = float(input('h2 = '))
+		sa = ((b*h1)/2)*h2
+		sa = str(sa)
+		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
 		
+	#surface area of cone
+	elif a == 3.04:
+		print(colored('sa = pi * r *(r + sqrt(h ^ 2 + r^2))','yellow' ))
+		r = float(input('r = '))
+		h = float(input('h = '))
+		sa = pi*r*(r + math.sqrt(h**2+r**2))
+		sa = str(sa)
+		print(colored('sa = ' + sa,'green'))
+		time.sleep(x1)
+	
+	#surface area of rectangular pyramid
+	elif a == 3.05:
+		l = float(input('l = '))
+		w = float(input('w = '))
+		h = float(input('h = '))
+		sa = l*w+l*math.sqrt((w/2)**2+h**2)+w*math.sqrt((l/2)**2+h**2)
+		sa = str(sa)
+		print(colored('sa = ' + sa,'green'))
+		time.sleep(x1)
+	
+	#surface area of triangular pyramid
+	elif a == 3.06:
+		print(colored('sa = ((b * h)/2) * 4','yellow'))
+		b = float(input('b = '))
+		h = float(input('h = '))
+		sa = ((b*h)/2)*4
+		sa = str(sa)
+		print(colored('sa = ' + sa,'green'))
+		time.sleep(x1)
+	
 	#surface area of sphere
 	elif a == 3.07:
 		print(colored('sa = 4 * (pi * r ^2)','yellow'))
@@ -228,7 +278,7 @@ while q<1:
 		
 	#surfeace area of cylinder
 	elif a == 3.08:
-		print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)'))
+		print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)','yellow'))
 		r = float(input('r ='))
 		h = float(input('h ='))
 		sa = (2*(pi*r)*h)+2*(pi*r**2)
@@ -236,8 +286,9 @@ while q<1:
 		print (colored('sa = ' + sa,'green'))
 		time.sleep(x1)
 		
- #	------------------------------------------------
+#	------------------------------------------------
 	
+#volume:
 	#volume of cube
 	elif a == 4.01:
 		print(colored('v = l * w * h','yellow'))
@@ -262,7 +313,13 @@ while q<1:
 		
 	#volume of triangular prisim
 	elif a == 4.03:
-		print('wip')
+		print(colored('sa = ((b * h1)/2) * h2','yellow'))
+		b = float(input('b = '))
+		h1 = float(input('h1 = '))
+		h2 = float(input('h2 = '))
+		sa = ((b*h1)/2)*h2
+		sa = str(sa)
+		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
 	
 	#volume of cone
@@ -287,7 +344,12 @@ while q<1:
 	
 	#volume of triangular pyramid
 	elif a == 4.06:
-		print('wip')
+		print(colored('v = (((b * h)/2) * h)/3','yellow'))
+		b = float(input('b = '))
+		h = float(input('h = '))
+		v = (((b*h)/2)*h)/3
+		v = str(a)
+		print(colored('v = ' + a,'green'))
 		time.sleep(x1)
 	
 	#volume of sphere
@@ -308,16 +370,16 @@ while q<1:
 		print(colored('v = ' + v,'green'))
 		time.sleep(x1)
 		
- #	------------------------------------------------
+#	------------------------------------------------
 	
-	#varible translation
+#varible translation:
 	elif a == 0.01:
 		print('wip')
 		time.sleep(x1)
 		
- #	------------------------------------------------
+#	------------------------------------------------
 	
-	#equations used
+#equations used:
 	elif a == 0.02:
 		print(colored('v = l * w * h','yellow'))
 		print(colored('a = l * w', 'yellow'))
@@ -326,9 +388,9 @@ while q<1:
 		print(colored('p = (2 * l) + (2 * w)', 'yellow'))
 		time.sleep(x1)
 	
- #	------------------------------------------------
+#	------------------------------------------------
 	
-	#exit
+#exit:
 	elif a == 0.03:
 		print(colored('shuting','red'))
 		time.sleep(1)
@@ -336,23 +398,81 @@ while q<1:
 		time.sleep(1)
 		q = q + 1
 	
- #	------------------------------------------------
+#	------------------------------------------------
  
- #show main menu
+#show main menu:
 	elif a == 0.04:
  		mainMenuNorm()
  		time.sleep(x1)
  		
- #	------------------------------------------------
+#	------------------------------------------------
  
-	#settings
+#settings:
 	elif a == 0.05:
  		print('tba')
  		time.sleep(x1)
  		
- #	------------------------------------------------
+#	------------------------------------------------
  
-	#invalid input
+#pythag menu:
+	elif a == 0.06:
+		print(colored('||||||||||||||||||||||||','cyan'))
+		print(colored('| A^2 + B^2 = [C^2] |p1|','cyan'))
+		print(colored('||||||||||||||||||||||||','cyan'))
+		print(colored('| A^2 + [B^2] = C^2 |p2|','cyan'))
+		print(colored('||||||||||||||||||||||||','cyan'))
+		print(colored('| [A^2] + B^2 = C^2 |p3|','cyan'))
+		print(colored('||||||||||||||||||||||||','cyan'))
+		p = input()
+		#pythag equations and solver
+		#finding c
+		if p == 'p1' or p == 'P1':
+			a = float(input('a = '))
+			b = float(input('b = '))
+			a1 = a**2
+			b1 = b**2
+			c1 = math.sqrt(a1+b1)
+			c1 = str(c1)
+			b = str(b)
+			a = str(a)
+			print (colored(a + ' + ' + b + ' = ' + c1,'green'))
+			time.sleep(x1)
+		#finding b
+		elif p == 'p2' or p == 'P2':
+			a = float(input('a = '))
+			c = float(input('c = '))
+			a1 = a**2
+			c1 = c**2
+			b1 = math.sqrt(c - a)
+			b1 = str(b1)
+			c = str(c)
+			a = str(a)
+			print (colored(a + ' + ' + b1 + ' = ' + c,'green'))
+			time.sleep(x1)
+		#finding a
+		elif p == 'p3' or p == 'P3':
+			b = float(input('b = '))
+			c = float(input('c = '))
+			a1 = b**2
+			c1 = c**2
+			a1 = math.sqrt(c - b)
+			a1 = str(b1)
+			b = str(b)
+			c = str(c)
+			print (colored(a1 + ' + ' + b + ' = ' + c,'green'))
+			time.sleep(x1)
+ 
+# ------------------------------------------------ 
+
+#clear screen:
+	elif a == 0.07:
+		repl.clear()
+		
+# ------------------------------------------------
+		
+#invalid input:
 	else:
 		print (colored("that input is not listed or incorect. please try again.","red"))
 		time.sleep(x1)
+
+
