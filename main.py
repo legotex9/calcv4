@@ -60,31 +60,31 @@ def mainMenuNorm():
 	time.sleep(x)
 	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|', 'cyan'))
 	time.sleep(x)
-	print (colored('|      OTHER      ||||||||','cyan'))
+	print (colored('|      OTHER      ||||||||||     OTHER EQUATIONS     ||||||||','cyan'))
 	time.sleep(x)
-	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|','cyan'))
+	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=|','cyan'))
 	time.sleep(x)
-	print (colored('|     VARIBLES    | 0.01 |','cyan'))
+	print (colored('|     VARIBLES    | 0.01 |||    PYTHAGOREAN THEROM   | 5.01 |','cyan'))
 	time.sleep(x)
-	print (colored('|   TRANSLATION   |      |','cyan'))
+	print (colored('|   TRANSLATION   |      |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|','cyan'))
+	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.02 |','cyan'))
 	time.sleep(x)
-	print (colored('| EQUATIONS  USED | 0.02 |','cyan'))
+	print (colored('| EQUATIONS  USED | 0.02 |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|','cyan'))
+	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.03 |','cyan'))
 	time.sleep(x)
-	print (colored('|      EXIT       | 0.03 |','cyan'))
+	print (colored('|       EXIT      | 0.03 |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|','cyan'))
+	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.04 |','cyan'))
 	time.sleep(x)
-	print (colored('|     SHOW MENU   | 0.04 |','cyan'))
+	print (colored('|     SHOW MENU   | 0.04 |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|','cyan'))
+	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.05 |','cyan'))
 	time.sleep(x)
-	print (colored('|     SETTINGS    | 0.05 |','cyan'))
+	print (colored('|     SETTINGS    | 0.05 |||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|','cyan'))
 	time.sleep(x)
-	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|','cyan'))
+	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||','cyan'))
 	time.sleep(x)
 def mainMenuNoSleep():
 	print('wip')
@@ -249,6 +249,7 @@ while q<1:
 	
 	#surface area of rectangular pyramid
 	elif a == 3.05:
+		print(colored('l * w + l * sqrt( (w/2) ^ 2 + h ^ 2) + sqrt( (l/2) ^ 2 + h ^ 2)','yellow'))
 		l = float(input('l = '))
 		w = float(input('w = '))
 		h = float(input('h = '))
@@ -381,12 +382,143 @@ while q<1:
 	
 #equations used:
 	elif a == 0.02:
-		print(colored('v = l * w * h','yellow'))
-		print(colored('a = l * w', 'yellow'))
-		print(colored('a = l * w', 'yellow'))
-		print(colored('sa = 6 * s ^ 2','yellow'))
-		print(colored('p = (2 * l) + (2 * w)', 'yellow'))
+		x1 = x1/8
+	#area equations:
+		print(colored('area equations:','yellow'))
 		time.sleep(x1)
+		print(colored('	square','yellow'))
+		time.sleep(x1)
+		print(colored('  a = l * w ','yellow'))
+		time.sleep(x1)
+		print(colored('	triangle','yellow'))
+		time.sleep(x1)
+		print(colored('  a = (h*b)/2 ','yellow'))
+		time.sleep(x1)
+		print(colored('	circle','yellow'))
+		time.sleep(x1)
+		print(colored('  a = pi * r ^ 2 \n \n','yellow'))
+		time.sleep(x1)
+		
+		
+	#perimiter equations:
+		print(colored('preimiter equations:','yellow'))
+		time.sleep(x1)
+		print(colored('	square','yellow'))
+		time.sleep(x1)
+		print(colored('  p (2 * l) + (2 * w)= ','yellow'))
+		time.sleep(x1)
+		print(colored('	triangle','yellow'))
+		time.sleep(x1)
+		print(colored('  p = 3 * s ','yellow'))
+		time.sleep(x1)
+		print(colored('	circle','yellow'))
+		time.sleep(x1)
+		print(colored('  p = 2 * pi * r \n \n','yellow'))
+		time.sleep(x1)
+		
+		
+ #surface area equations:
+		print(colored('preimiter equations:','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' prisims','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  rectangular','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = 2 * (w * l + h * l + h * w) ','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  triangular','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = ((b * h1)/2)* h2 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' pyramids','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  rectangular','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = l * w + l * sqrt( (w/2) ^ 2 + h ^ 2) + sqrt( (l/2) ^ 2 + h ^ 2) ','yellow'))
+		time.sleep(x1)
+	
+		print(colored('  triangular','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = ((b * h)/2) * 4 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' sphere','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = 4 * (pi * r ^2) ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cylander','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2) ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cone','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = pi * r *(r + sqrt(h ^ 2 + r^2)) ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cube','yellow'))
+		time.sleep(x1)
+		print(colored('  sa = 6 * b ^ 2 \n \n','yellow'))
+		time.sleep(x1)
+	
+	
+	#volume equations:
+		print(colored('preimiter equations:','yellow'))
+				
+		print(colored(' prisims','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  rectangular','yellow'))
+		time.sleep(x1)
+		print(colored('  v = w * l * h ','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  triangular','yellow'))
+		time.sleep(x1)
+		print(colored('  v = ((b * h1)/2)* h2 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' pyramids','yellow'))
+		time.sleep(x1)
+		
+		print(colored('  rectangular','yellow'))
+		time.sleep(x1)
+		print(colored('  v = ((l * w) * h)/3 ','yellow'))
+		time.sleep(x1)
+	
+		print(colored('  triangular','yellow'))
+		time.sleep(x1)
+		print(colored('  v = (((b * h)/2 * h)/3 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' sphere','yellow'))
+		time.sleep(x1)
+		print(colored('  v = ((pi * r ^ 3) * 4)/3 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cylander','yellow'))
+		time.sleep(x1)
+		print(colored('  v = (2 * (pi * r) * h) + 2 * (pi * r ^ 2) ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cone','yellow'))
+		time.sleep(x1)
+		print(colored('  v = ((pi * r ^ 2) * h)/3 ','yellow'))
+		time.sleep(x1)
+		
+		print(colored(' cube','yellow'))
+		time.sleep(x1)
+		print(colored('  v = w*l*h \n \n','yellow'))
+		time.sleep(x1)
+		
+		
+		x1 = x1*2
 	
 #	------------------------------------------------
 	
