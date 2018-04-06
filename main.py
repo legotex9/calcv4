@@ -69,6 +69,8 @@ while q<1:
 	print (colored("| EQUATIONS  USED | EQ |","cyan"))
 	time.sleep(x)
 	print (colored("|      EXIT       |EXIT|","cyan"))
+    time.sleep(x)
+    print (colored("|++++++++++++++++++++++|","cyan"))
 	time.sleep(x)
 	print (colored("|-=-=-=-=-=-=-=-=-=-=-=|","cyan"))
 	a = input()
