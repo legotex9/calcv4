@@ -127,8 +127,10 @@ def mainMenuNoSleep():
 	print (colored('|     SHOW MENU   | 0.04 |||++++++++++++++++++++++++++++++++|','cyan'))
 	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.05 |','cyan'))
 	print (colored('|     SETTINGS    | 0.05 |||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|','cyan'))
-	print (colored('|++++++++++++++++++++++++|||
-	print (colored('| CONVERSION MENU | 0.06 |||
+	print (colored('|++++++++++++++++++++++++|||','cyan'))
+	print (colored('| CONVERSION MENU | 0.06 |||','cyan'))
+	print (colored('|++++++++++++++++++++++++|||','cyan'))
+	print (colored('|   CLEAR SCREEN  | 0.07 |||','cyan'))
 	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||','cyan'))
 mainMenuNorm()
 def note():
@@ -597,6 +599,15 @@ while q<1:
 			time.sleep(x1)
  
 # ------------------------------------------------ 
+
+#conversion menu:
+	elif a == 0.06:
+		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
+		print (colored('| CELCIUS TO FAHRENHEIT | 6.01 |','blue'))
+		print (colored('| FAHRENHEIR TO CELCIUS | 6.02 |','blue'))
+		print (colored('|    FEET TO INCHES     | 6.03 |','blue'))
+
+# ------------------------------------------------
 
 #clear screen:
 	elif a == 0.07:
