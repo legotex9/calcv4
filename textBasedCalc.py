@@ -127,6 +127,8 @@ def mainMenuNoSleep():
 	print (colored('|     SHOW MENU   | 0.04 |||++++++++++++++++++++++++++++++++|','cyan'))
 	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.05 |','cyan'))
 	print (colored('|     SETTINGS    | 0.05 |||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|','cyan'))
+	print (colored('|++++++++++++++++++++++++|||
+	print (colored('| CONVERSION MENU | 0.06 |||
 	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||','cyan'))
 mainMenuNorm()
 def note():
@@ -547,7 +549,7 @@ while q<1:
 #	------------------------------------------------
  
 #pythag menu:
-	elif a == 0.06:
+	elif a == 5.01:
 		print(colored('||||||||||||||||||||||||','cyan'))
 		print(colored('| A^2 + B^2 = [C^2] |p1|','cyan'))
 		print(colored('||||||||||||||||||||||||','cyan'))
