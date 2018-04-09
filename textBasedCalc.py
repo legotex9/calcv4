@@ -682,11 +682,83 @@ while q<1:
 
 #conversion menu:
 	elif a == 0.06:
+		#menu
 		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
 		print (colored('| CELCIUS TO FAHRENHEIT | 6.01 |','blue'))
 		print (colored('| FAHRENHEIR TO CELCIUS | 6.02 |','blue'))
+		print (colored('|::::::::::::::::::::::::::::::|','blue'))
 		print (colored('|    FEET TO INCHES     | 6.03 |','blue'))
+		print (colored('|    FEET TO MILES      | 6.04 |','blue'))
+		print (colored('|    FEET TO YARDS      | 6.05 |','blue'))
+		print (colored('|    FEET TO METERS     | 6.06 |','blue'))
+		print (colored('|  FEET TO KILOMETERS   | 6.07 |','blue'))
+		print (colored('| FEET TO CENTIMETERS   | 6.08 |','blue'))
+		print (colored('|  FEET TO MILIMETERS   | 6.09 |','blue'))
+		print (colored('|::::::::::::::::::::::::::::::|','blue'))
+		print (colored('|     INCHES TO FEET    | 6.10 |','blue'))
+		print (colored('|    INCHES TO MILES    | 6.11 |','blue'))
+		print (colored('|    INCHES TO YARDS    | 6.12 |','blue'))
+		print (colored('|   INCHES TO METERS    | 6.13 |','blue'))
+		print (colored('|  INCHES TO KILOMETERS | 6.14 |','blue'))
+		print (colored('| INCHES TO CENTIMETERS | 6.15 |','blue'))
+		print (colored('|  INCHES TO MILIMETERS | 6.16 |','blue'))
 		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
+		
+		
+		cv = float(input())
+		wip = 'wip'
+		if cv == 6.01:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.02:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.03:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.04:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.05:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.06:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.07:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.08:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.09:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.10:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.11:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.11:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.12:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.13:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.14:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.15:
+			print(wip)
+			time.sleep(.5)
+		if cv == 6.16:
+			print(wip)
+			time.sleep(.5)
+			
 		
 # ------------------------------------------------
 
