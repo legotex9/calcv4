@@ -2,7 +2,9 @@ import repl # learn more: https://python.org/pypi/repl
 from termcolor import colored
 import time
 import math
-
+s1 = int(0)
+s2 = int(0)
+s3 = int(0)
 q = 0
 x = float(.25/2)
 def mainMenuNorm():
@@ -170,11 +172,18 @@ while q<1:
 	
 	#area of circle
 	elif a == 1.03:
-		print(colored('a = pi * r ^ 2','yellow'))
-		r = float(input('r = '))
-		a = pi * r **2
-		a = str(a)
-		print (colored('a = ' + a,'green'))
+		if s1 == 0:
+			print(colored('a = pi * r ^ 2','yellow'))
+			r = float(input('r = '))
+			a = pi * r **2
+			a = str(a)
+			print (colored('a = ' + a,'green'))
+		else:
+			print(colored('a = pi * d ^ 2','yellow'))
+			d = float(input('d = '))
+			a = pi * (d/2) **2
+			a = str(a)
+			print (colored('a = ' + a,'green'))
 	
 #	------------------------------------------------
 	
@@ -200,13 +209,20 @@ while q<1:
 	
 	#perimiter of circle
 	elif a == 2.03:
-		print(colored('p = 2 * pi* r','yellow'))
-		r = float(input('r = '))
-		p = 2 * pi * r
-		p = str(p)
-		print(colored('p = ' + p,'green'))
-		time.sleep(x1)
-	
+		if s1 == 0:
+			print(colored('p = 2 * pi* r','yellow'))
+			r = float(input('r = '))
+			p = 2 * pi * r
+			p = str(p)
+			print(colored('p = ' + p,'green'))
+			time.sleep(x1)
+		else:
+			print(colored('p = 2 * pi* d','yellow'))
+			d = float(input('d = '))
+			p = 2 * pi * (d/2)
+			p = str(p)
+			print(colored('p = ' + p,'green'))
+			time.sleep(x1)
 #	------------------------------------------------
 	
 #surface area:
@@ -243,13 +259,23 @@ while q<1:
 		
 	#surface area of cone
 	elif a == 3.04:
-		print(colored('sa = pi * r *(r + sqrt(h ^ 2 + r^2))','yellow' ))
-		r = float(input('r = '))
-		h = float(input('h = '))
-		sa = pi*r*(r + math.sqrt(h**2+r**2))
-		sa = str(sa)
-		print(colored('sa = ' + sa,'green'))
-		time.sleep(x1)
+		if s1 == 0:
+			print(colored('sa = pi * r *(r + sqrt(h ^ 2 + r^2))','yellow' ))
+			r = float(input('r = '))
+			h = float(input('h = '))
+			sa = pi*r*(r + math.sqrt(h**2+r**2))
+			sa = str(sa)
+			print(colored('sa = ' + sa,'green'))
+			time.sleep(x1)
+		else:
+			print(colored('sa = pi * d *(d + sqrt(h ^ 2 + d^2))','yellow' ))
+			d = float(input('d = '))
+			d = d/2
+			h = float(input('h = '))
+			sa = pi*r*(d + math.sqrt(h**2+d**2))
+			sa = str(sa)
+			print(colored('sa = ' + sa,'green'))
+			time.sleep(x1)
 	
 	#surface area of rectangular pyramid
 	elif a == 3.05:
@@ -274,22 +300,41 @@ while q<1:
 	
 	#surface area of sphere
 	elif a == 3.07:
-		print(colored('sa = 4 * (pi * r ^2)','yellow'))
-		r = float(input('r = '))
-		sa = 4*(pi*r**2)
-		sa = str(sa)
-		print(colored('sa = ' + sa,'green'))
-		time.sleep(x1)
-		
+		if s1 == 0:
+			print(colored('sa = 4 * (pi * r ^2)','yellow'))
+			r = float(input('r = '))
+			sa = 4*(pi*r**2)
+			sa = str(sa)
+			print(colored('sa = ' + sa,'green'))
+			time.sleep(x1)
+		else:
+			print(colored('sa = 4 * (pi * d ^2)','yellow'))
+			d = float(input('d = '))
+			d = d/2
+			sa = 4*(pi*r**2)
+			sa = str(sa)
+			print(colored('sa = ' + sa,'green'))
+			time.sleep(x1)
+			
 	#surfeace area of cylinder
 	elif a == 3.08:
-		print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)','yellow'))
-		r = float(input('r ='))
-		h = float(input('h ='))
-		sa = (2*(pi*r)*h)+2*(pi*r**2)
-		sa = str(sa)
-		print (colored('sa = ' + sa,'green'))
-		time.sleep(x1)
+		if s1 == 0:
+			print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)','yellow'))
+			r = float(input('r ='))
+			h = float(input('h ='))
+			sa = (2*(pi*r)*h)+2*(pi*r**2)
+			sa = str(sa)
+			print (colored('sa = ' + sa,'green'))
+			time.sleep(x1)
+		else:
+			print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)','yellow'))
+			d = float(input('d ='))
+			d = d/2
+			h = float(input('h ='))
+			sa = (2*(pi*r)*h)+2*(pi*r**2)
+			sa = str(sa)
+			print (colored('sa = ' + sa,'green'))
+			time.sleep(x1)
 		
 #	------------------------------------------------
 	
@@ -329,12 +374,21 @@ while q<1:
 	
 	#volume of cone
 	elif a == 4.04:
-		print(colored('v = ((pi * r ^ 2) * h) /3','yellow'))
-		r = float(input('r = '))
-		h = float(input('h = '))
-		v = ((pi * r**2)*h)/3
-		v = str(v)
-		print(colored('v = ' + v,'green'))
+		if s1 == 0:
+			print(colored('v = ((pi * r ^ 2) * h) /3','yellow'))
+			r = float(input('r = '))
+			h = float(input('h = '))
+			v = ((pi * r**2)*h)/3
+			v = str(v)
+			print(colored('v = ' + v,'green'))
+		else:
+			print(colored('v = ((pi * r ^ 2) * h) /3','yellow'))
+			d = float(input('d = '))
+			d = d/2
+			h = float(input('h = '))
+			v = ((pi * r**2)*h)/3
+			v = str(v)
+			print(colored('v = ' + v,'green'))
 		
 	#volume of rectangular pyramid
 	elif a == 4.05:
@@ -359,21 +413,39 @@ while q<1:
 	
 	#volume of sphere
 	elif a == 4.07:
-		print(colored('v = ((pi * r ^ 3) * 4) /3'))
-		r = float(input('r = '))
-		v = ((pi*r**3)*4)/3
-		v = str(v)
-		print(colored('v = ' + v,'green'))
+		if s1 == 0:
+			print(colored('v = ((pi * r ^ 3) * 4) /3'))
+			r = float(input('r = '))
+			v = ((pi*r**3)*4)/3
+			v = str(v)
+			print(colored('v = ' + v,'green'))
+		else:
+			print(colored('v = ((pi * r ^ 3) * 4) /3'))
+			d = float(input('d = '))
+			d = d/2
+			v = ((pi*r**3)*4)/3
+			v = str(v)
+			print(colored('v = ' + v,'green'))
 		
 	#volume of cylinder
 	elif a == 4.08:
-		print(colored(' (pi * r ^2) * h','yellow'))
-		r = float(input('r = '))
-		h = float(input('h = '))
-		v = (pi*r**2)*h
-		v = str(v)
-		print(colored('v = ' + v,'green'))
-		time.sleep(x1)
+		if s1 == 0:
+			print(colored(' (pi * r ^2) * h','yellow'))
+			r = float(input('r = '))
+			h = float(input('h = '))
+			v = (pi*r**2)*h
+			v = str(v)
+			print(colored('v = ' + v,'green'))
+			time.sleep(x1)
+		else:
+			print(colored(' (pi * r ^2) * h','yellow'))
+			d = float(input('d = '))
+			d = d/2
+			h = float(input('h = '))
+			v = (pi*r**2)*h
+			v = str(v)
+			print(colored('v = ' + v,'green'))
+			time.sleep(x1)
 		
 #	------------------------------------------------
 	
@@ -545,9 +617,17 @@ while q<1:
  
 #settings:
 	elif a == 0.05:
- 		print('tba')
- 		time.sleep(x1)
- 		
+		print (colored('|radius or diameter | R | s1 |','cyan'))
+		S = input('setting id = ')
+		if S == 's1':
+			if s1 == 0: 
+				s1 = s1 + 1
+				print (colored('setting updated','green'))
+			else:
+				s1 = s1 -1
+				print (colored('setting updated','green'))
+		
+ 			
 #	------------------------------------------------
  
 #pythag menu:
@@ -606,7 +686,8 @@ while q<1:
 		print (colored('| CELCIUS TO FAHRENHEIT | 6.01 |','blue'))
 		print (colored('| FAHRENHEIR TO CELCIUS | 6.02 |','blue'))
 		print (colored('|    FEET TO INCHES     | 6.03 |','blue'))
-
+		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
+		
 # ------------------------------------------------
 
 #clear screen:
