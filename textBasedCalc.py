@@ -71,11 +71,11 @@ def mainMenuNorm():
 	time.sleep(x)
 	print (colored('|   TRANSLATION   |      |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.02 |','cyan'))
+	print (colored('|++++++++++++++++++++++++|||      SIMPLE INTREST     | 5.02 |','cyan'))
 	time.sleep(x)
 	print (colored('| EQUATIONS  USED | 0.02 |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
-	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.03 |','cyan'))
+	print (colored('|++++++++++++++++++++++++|||     COMPOUND INTREST    | 5.03 |','cyan'))
 	time.sleep(x)
 	print (colored('|       EXIT      | 0.03 |||++++++++++++++++++++++++++++++++|','cyan'))
 	time.sleep(x)
@@ -122,9 +122,9 @@ def mainMenuNoSleep():
 	print (colored('|-=-=-=-=-=-=-=-=-=-=-=-=|||=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=|','cyan'))
 	print (colored('|     VARIBLES    | 0.01 |||    PYTHAGOREAN THEROM   | 5.01 |','cyan'))
 	print (colored('|   TRANSLATION   |      |||++++++++++++++++++++++++++++++++|','cyan'))
-	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.02 |','cyan'))
+	print (colored('|++++++++++++++++++++++++|||      SIMPLE INTREST     | 5.02 |','cyan'))
 	print (colored('| EQUATIONS  USED | 0.02 |||++++++++++++++++++++++++++++++++|','cyan'))
-	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.03 |','cyan'))
+	print (colored('|++++++++++++++++++++++++|||     COMPOUND INTREST    | 5.03 |','cyan'))
 	print (colored('|       EXIT      | 0.03 |||++++++++++++++++++++++++++++++++|','cyan'))
 	print (colored('|++++++++++++++++++++++++|||           TBA           | 5.04 |','cyan'))
 	print (colored('|     SHOW MENU   | 0.04 |||++++++++++++++++++++++++++++++++|','cyan'))
@@ -717,6 +717,34 @@ while q<1:
  
 # ------------------------------------------------ 
 
+#simple intrest:
+	elif a == 5.02:
+		print(colored('I = Prt','yellow'))
+		p = float(input('P = '))
+		r = float(input('r = '))
+		t = float(input('t = '))
+		i = p*r*t
+		i = str(i)
+		print (colored('I = ' + i,'green'))
+		time.sleep(x1)
+		mem.append(i)
+
+# ------------------------------------------------
+
+#compund intrest:
+	elif a == 5.03:
+		print (colored('A = P(1 + r)^t','yellow'))
+		p = float(input('P = '))
+		r = float(input('r = '))
+		t = float(input('t = '))
+		a = a*(1+r)**t
+		a = str(a)
+		print (colored('A = ' + a,'green'))
+		time.sleep(x1)
+		mem.append(a)
+		
+# ------------------------------------------------
+
 #conversion menu:
 	elif a == 0.06:
 		#menu
@@ -749,54 +777,69 @@ while q<1:
 			f = str(f)
 			mem.append(f)
 			print(c + 'c = ' + f + ' f')
+
 		elif cv == 6.02:
 			f = float(input*'fahrenheit = ')
 			c = (f-32)/1.8
 			print(f + 'f = ' + c + ' c')
 			mem.append(c)
+
 		elif cv == 6.03:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.04:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.05:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.06:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.07:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.08:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.09:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.10:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.11:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.12:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.13:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.14:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.15:
 			print('wip')
 			time.sleep(.25)
+
 		elif cv == 6.16:
 			print('wip')
 			time.sleep(.25)
-			
+
 		
 # ------------------------------------------------
 
