@@ -7,6 +7,7 @@ s2 = int(0)
 s3 = int(0)
 q = 0
 x = float(.25/2)
+mem = []
 def mainMenuNorm():
 	print (colored('                            ____________','cyan'))
 	time.sleep(x/2)
@@ -147,6 +148,7 @@ while q<1:
 	x = float(x/2)
 	a = float(input())
 	x1 = int(1)
+	print(mem)
 
 # --------------------------------------------
 #area:
@@ -159,6 +161,7 @@ while q<1:
 		a = str(a)
 		print (colored('a = ' + a, 'green'))
 		time.sleep(x1)
+		mem.append(a)
 	
 	#area of triangle
 	elif a == 1.02:
@@ -169,6 +172,7 @@ while q<1:
 		a = str(a)
 		print (colored('a = ' + a, 'green'))
 		time.sleep(x1)
+		mem.append(a)
 	
 	#area of circle
 	elif a == 1.03:
@@ -184,6 +188,7 @@ while q<1:
 			a = pi * (d/2) **2
 			a = str(a)
 			print (colored('a = ' + a,'green'))
+			mem.append(a)
 	
 #	------------------------------------------------
 	
@@ -197,6 +202,7 @@ while q<1:
 		p = str(p)
 		print(colored('p = ' + p, 'green'))
 		time.sleep(x1)
+		mem.append(p)
 	
 	#perimiter of triangle
 	elif a == 2.02:
@@ -206,6 +212,7 @@ while q<1:
 		p = str(p)
 		print(colored('p = ' + p, 'green'))
 		time.sleep(x1)
+		mem.append(p)
 	
 	#perimiter of circle
 	elif a == 2.03:
@@ -216,6 +223,7 @@ while q<1:
 			p = str(p)
 			print(colored('p = ' + p,'green'))
 			time.sleep(x1)
+			mem.append(p)
 		else:
 			print(colored('p = 2 * pi* d','yellow'))
 			d = float(input('d = '))
@@ -223,6 +231,8 @@ while q<1:
 			p = str(p)
 			print(colored('p = ' + p,'green'))
 			time.sleep(x1)
+			mem.append(p)
+			
 #	------------------------------------------------
 	
 #surface area:
@@ -234,6 +244,7 @@ while q<1:
 		sa = str(sa)
 		print(colored('sa = ' + sa, 'green'))
 		time.sleep(x1)
+		mem.append(sa)
 	
 	#surface area of rectangular prism
 	elif a == 3.02:
@@ -245,6 +256,7 @@ while q<1:
 		sa = str(a)
 		print (colored('sa = ' + sa, 'green'))
 		time.sleep(x1)
+		mem.append(sa)
 		
 	#surface area of triangular prisim
 	elif a == 3.03:
@@ -256,6 +268,7 @@ while q<1:
 		sa = str(sa)
 		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
+		mem.append(sa)
 		
 	#surface area of cone
 	elif a == 3.04:
@@ -267,6 +280,7 @@ while q<1:
 			sa = str(sa)
 			print(colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 		else:
 			print(colored('sa = pi * d *(d + sqrt(h ^ 2 + d^2))','yellow' ))
 			d = float(input('d = '))
@@ -276,6 +290,7 @@ while q<1:
 			sa = str(sa)
 			print(colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 	
 	#surface area of rectangular pyramid
 	elif a == 3.05:
@@ -287,6 +302,7 @@ while q<1:
 		sa = str(sa)
 		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
+		mem.append(sa)
 	
 	#surface area of triangular pyramid
 	elif a == 3.06:
@@ -297,6 +313,7 @@ while q<1:
 		sa = str(sa)
 		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
+		mem.append(sa)
 	
 	#surface area of sphere
 	elif a == 3.07:
@@ -307,6 +324,7 @@ while q<1:
 			sa = str(sa)
 			print(colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 		else:
 			print(colored('sa = 4 * (pi * d ^2)','yellow'))
 			d = float(input('d = '))
@@ -315,6 +333,7 @@ while q<1:
 			sa = str(sa)
 			print(colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 			
 	#surfeace area of cylinder
 	elif a == 3.08:
@@ -326,6 +345,7 @@ while q<1:
 			sa = str(sa)
 			print (colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 		else:
 			print(colored('sa = (2 * (pi * r) * h) + 2 * (pi * r ^ 2)','yellow'))
 			d = float(input('d ='))
@@ -335,6 +355,7 @@ while q<1:
 			sa = str(sa)
 			print (colored('sa = ' + sa,'green'))
 			time.sleep(x1)
+			mem.append(sa)
 		
 #	------------------------------------------------
 	
@@ -349,6 +370,7 @@ while q<1:
 		v = str(v)
 		print(colored('v = ' + v, 'green'))
 		time.sleep(x1)
+		mem.append(v)
 		
 	#volume of rectangular prisim
 	elif a == 4.02:
@@ -360,6 +382,7 @@ while q<1:
 		v = str(v)
 		print(colored('v = ' + v, 'green'))
 		time.sleep(x1)
+		mem.append(v)
 		
 	#volume of triangular prisim
 	elif a == 4.03:
@@ -371,6 +394,7 @@ while q<1:
 		sa = str(sa)
 		print(colored('sa = ' + sa,'green'))
 		time.sleep(x1)
+		mem.append(v)
 	
 	#volume of cone
 	elif a == 4.04:
@@ -381,6 +405,7 @@ while q<1:
 			v = ((pi * r**2)*h)/3
 			v = str(v)
 			print(colored('v = ' + v,'green'))
+			mem.append(v)
 		else:
 			print(colored('v = ((pi * r ^ 2) * h) /3','yellow'))
 			d = float(input('d = '))
@@ -389,6 +414,7 @@ while q<1:
 			v = ((pi * r**2)*h)/3
 			v = str(v)
 			print(colored('v = ' + v,'green'))
+			mem.append(v)
 		
 	#volume of rectangular pyramid
 	elif a == 4.05:
@@ -400,6 +426,7 @@ while q<1:
 		v = str(v)
 		print(colored('v = ' + v,'green'))
 		time.sleep(x1)
+		mem.append(v)
 	
 	#volume of triangular pyramid
 	elif a == 4.06:
@@ -410,6 +437,7 @@ while q<1:
 		v = str(a)
 		print(colored('v = ' + a,'green'))
 		time.sleep(x1)
+		mem.append(v)
 	
 	#volume of sphere
 	elif a == 4.07:
@@ -419,6 +447,7 @@ while q<1:
 			v = ((pi*r**3)*4)/3
 			v = str(v)
 			print(colored('v = ' + v,'green'))
+			mem.append(v)
 		else:
 			print(colored('v = ((pi * r ^ 3) * 4) /3'))
 			d = float(input('d = '))
@@ -426,6 +455,7 @@ while q<1:
 			v = ((pi*r**3)*4)/3
 			v = str(v)
 			print(colored('v = ' + v,'green'))
+			mem.append(v)
 		
 	#volume of cylinder
 	elif a == 4.08:
@@ -437,15 +467,17 @@ while q<1:
 			v = str(v)
 			print(colored('v = ' + v,'green'))
 			time.sleep(x1)
+			mem.append(v)
 		else:
 			print(colored(' (pi * r ^2) * h','yellow'))
 			d = float(input('d = '))
 			d = d/2
 			h = float(input('h = '))
-			v = (pi*r**2)*h
+			v = (pi*d**2)*h
 			v = str(v)
 			print(colored('v = ' + v,'green'))
 			time.sleep(x1)
+			mem.append(v)
 		
 #	------------------------------------------------
 	
@@ -653,6 +685,8 @@ while q<1:
 			a = str(a)
 			print (colored(a + ' + ' + b + ' = ' + c1,'green'))
 			time.sleep(x1)
+			mem.append(c1)
+			
 		#finding b
 		elif p == 'p2' or p == 'P2':
 			a = float(input('a = '))
@@ -665,6 +699,8 @@ while q<1:
 			a = str(a)
 			print (colored(a + ' + ' + b1 + ' = ' + c,'green'))
 			time.sleep(x1)
+			mem.append(b1)
+			
 		#finding a
 		elif p == 'p3' or p == 'P3':
 			b = float(input('b = '))
@@ -677,6 +713,7 @@ while q<1:
 			c = str(c)
 			print (colored(a1 + ' + ' + b + ' = ' + c,'green'))
 			time.sleep(x1)
+			mem.append(a1)
  
 # ------------------------------------------------ 
 
@@ -685,7 +722,7 @@ while q<1:
 		#menu
 		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
 		print (colored('| CELCIUS TO FAHRENHEIT | 6.01 |','blue'))
-		print (colored('| FAHRENHEIR TO CELCIUS | 6.02 |','blue'))
+		print (colored('| FAHRENHEIT TO CELCIUS | 6.02 |','blue'))
 		print (colored('|::::::::::::::::::::::::::::::|','blue'))
 		print (colored('|    FEET TO INCHES     | 6.03 |','blue'))
 		print (colored('|    FEET TO MILES      | 6.04 |','blue'))
@@ -707,11 +744,16 @@ while q<1:
 		
 		cv = float(input())
 		if cv == 6.01:
-			print('wip')
-			time.sleep(.25)
+			c = float(input('celcius = '))
+			f = c*1.8+32
+			f = str(f)
+			mem.append(f)
+			print(c + 'c = ' + f + ' f')
 		elif cv == 6.02:
-			print('wip')
-			time.sleep(.25)
+			f = float(input*'fahrenheit = ')
+			c = (f-32)/1.8
+			print(f + 'f = ' + c + ' c')
+			mem.append(c)
 		elif cv == 6.03:
 			print('wip')
 			time.sleep(.25)
