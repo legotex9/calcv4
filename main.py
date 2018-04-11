@@ -2,13 +2,23 @@ import repl # learn more: https://python.org/pypi/repl
 from termcolor import colored
 import time
 import math
+#importing main menu
 from display import mainMenuNorm, mainMenuNoSleep
+#importing area fuctions
+from calc import areaSqr, areaTri, areaCiri
+#importing perimiter functions
+from calc import permSqr, permTri, permCirc
+#improting surface area functions
+from calc import sAreaCube, sAreaRectangularPrisim, sAreaTriangularPrisim, sAreaCone, sAreaRectangularPyramid, sAreaRectangularPyramid, sAreaSphere, sAreaCylander
+#importing volume functions
+from calc import volCube, volRectangularPrisim, volTriangularPrisim, volCone, volRectangularPyramid, volRectangularPyramid, volSphere, volCylander
 s1 = int(0)
 s2 = int(0)
 s3 = int(0)
 q = 0
 x = float(.25/2)
 mem = []
+
 mainMenuNorm()
 def note():
 	print(colored('NOTE:','red'))
@@ -617,21 +627,6 @@ while q<1:
 		time.sleep(x1)
 		mem.append(a)
 		
-# ------------------------------------------------
-
-#slope of line
-	elif a == 5.04:
-		print (colored('slope = (x1-x2)/(y1-y2)','yellow'))
-		x1 = float(input('x1 = '))
-		y1 = float(input('y1 = '))
-		x2 = float(input('x2 = '))
-		y2 = float(input('y2 = '))
-		slope = (x1-x2)/(y1-y1)
-		slope = str(slope)
-		print(colored('slope = ' + slope,'green'))
-		time.sleep(x1)
-		mem.append(slope)
-
 # ------------------------------------------------
 
 #conversion menu:
