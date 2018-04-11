@@ -745,6 +745,21 @@ while q<1:
 		
 # ------------------------------------------------
 
+#slope of line
+	elif a == 5.04:
+		print (colored('slope = (x1-x2)/(y1-y2)','yellow'))
+		x1 = float(input('x1 = '))
+		y1 = float(input('y1 = '))
+		x2 = float(input('x2 = '))
+		y2 = float(input('y2 = '))
+		slope = (x1-x2)/(y1-y1)
+		slope = str(slope)
+		print(colored('slope = ' + slope,'green'))
+		time.sleep(x1)
+		mem.append(slope)
+
+# ------------------------------------------------
+
 #conversion menu:
 	elif a == 0.06:
 		#menu
