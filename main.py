@@ -2,8 +2,7 @@ import repl # learn more: https://python.org/pypi/repl
 from termcolor import colored
 import time
 import math
-import mainMenuNorm
-import mainMenuNoSleep
+from display import mainMenuNorm, mainMenuNoSleep
 s1 = int(0)
 s2 = int(0)
 s3 = int(0)
