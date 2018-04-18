@@ -2,13 +2,19 @@ import repl # learn more: https://python.org/pypi/repl
 from termcolor import colored
 import time
 import math
+#importing main menu
 from display import mainMenuNorm, mainMenuNoSleep
+#importing area fuctions
+from calc import area, perimiter, surfaceArea, volume
+#importing conversion stuff
+from conversion import conversionStuff
 s1 = int(0)
 s2 = int(0)
 s3 = int(0)
 q = 0
 x = float(.25/2)
 mem = []
+
 mainMenuNorm()
 def note():
 	print(colored('NOTE:','red'))
@@ -619,117 +625,7 @@ while q<1:
 		
 # ------------------------------------------------
 
-#slope of line
-	elif a == 5.04:
-		print (colored('slope = (x1-x2)/(y1-y2)','yellow'))
-		x1 = float(input('x1 = '))
-		y1 = float(input('y1 = '))
-		x2 = float(input('x2 = '))
-		y2 = float(input('y2 = '))
-		slope = (x1-x2)/(y1-y1)
-		slope = str(slope)
-		print(colored('slope = ' + slope,'green'))
-		time.sleep(x1)
-		mem.append(slope)
 
-# ------------------------------------------------
-
-#conversion menu:
-	elif a == 0.06:
-		#menu
-		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
-		print (colored('| CELCIUS TO FAHRENHEIT | 6.01 |','blue'))
-		print (colored('| FAHRENHEIT TO CELCIUS | 6.02 |','blue'))
-		print (colored('|::::::::::::::::::::::::::::::|','blue'))
-		print (colored('|    FEET TO INCHES     | 6.03 |','blue'))
-		print (colored('|    FEET TO MILES      | 6.04 |','blue'))
-		print (colored('|    FEET TO YARDS      | 6.05 |','blue'))
-		print (colored('|    FEET TO METERS     | 6.06 |','blue'))
-		print (colored('|  FEET TO KILOMETERS   | 6.07 |','blue'))
-		print (colored('| FEET TO CENTIMETERS   | 6.08 |','blue'))
-		print (colored('|  FEET TO MILIMETERS   | 6.09 |','blue'))
-		print (colored('|::::::::::::::::::::::::::::::|','blue'))
-		print (colored('|     INCHES TO FEET    | 6.10 |','blue'))
-		print (colored('|    INCHES TO MILES    | 6.11 |','blue'))
-		print (colored('|    INCHES TO YARDS    | 6.12 |','blue'))
-		print (colored('|   INCHES TO METERS    | 6.13 |','blue'))
-		print (colored('|  INCHES TO KILOMETERS | 6.14 |','blue'))
-		print (colored('| INCHES TO CENTIMETERS | 6.15 |','blue'))
-		print (colored('|  INCHES TO MILIMETERS | 6.16 |','blue'))
-		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
-		
-		
-		cv = float(input())
-		if cv == 6.01:
-			c = float(input('celcius = '))
-			f = c*1.8+32
-			f = str(f)
-			mem.append(f)
-			print(c + 'c = ' + f + ' f')
-
-		elif cv == 6.02:
-			f = float(input*'fahrenheit = ')
-			c = (f-32)/1.8
-			print(f + 'f = ' + c + ' c')
-			mem.append(c)
-
-		elif cv == 6.03:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.04:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.05:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.06:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.07:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.08:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.09:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.10:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.11:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.12:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.13:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.14:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.15:
-			print('wip')
-			time.sleep(.25)
-
-		elif cv == 6.16:
-			print('wip')
-			time.sleep(.25)
-
-		
 # ------------------------------------------------
 
 #clear screen:
@@ -742,5 +638,3 @@ while q<1:
 	else:
 		print (colored("that input is not listed or incorect. please try again.","red"))
 		time.sleep(x1)
-
-
